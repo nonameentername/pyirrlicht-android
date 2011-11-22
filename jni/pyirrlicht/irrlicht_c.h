@@ -4,11 +4,11 @@
 
 #define _IRR_STATIC_LIB_
 
-#define _COMPILE_WITH_2DTTFONT_
+//#define _COMPILE_WITH_2DTTFONT_
 
 #define _COMPILE_WITH_GRID_SCENE_NODE_
 
-#define _COMPILE_WITH_AGG_
+//#define _COMPILE_WITH_AGG_
 
 #ifdef _MSC_VER
 #define DEBUG_EVENTS

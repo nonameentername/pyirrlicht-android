@@ -27,7 +27,7 @@ IRRLICHT_C_API quaternion* quaternion_set1(quaternion* pointer, f32 x, f32 y, f3
 IRRLICHT_C_API quaternion* quaternion_set2(quaternion* pointer, f32 x, f32 y, f32 z){return &pointer->set(x, y, z);}
 IRRLICHT_C_API quaternion* quaternion_set3(quaternion* pointer, const core::vector3df* vec){return &pointer->set(*vec);}
 IRRLICHT_C_API quaternion* quaternion_set4(quaternion* pointer, const core::quaternion* quat){return &pointer->set(*quat);}
-IRRLICHT_C_API const bool quaternion_equals(quaternion* pointer, const quaternion* other, const f32 tolerance = ROUNDING_ERROR_f32){return pointer->equals(*other, tolerance);}
+//IRRLICHT_C_API const bool quaternion_equals(quaternion* pointer, const quaternion* other, const f32 tolerance = ROUNDING_ERROR_f32){return pointer->equals(*other, tolerance);}
 IRRLICHT_C_API quaternion* quaternion_normalize(quaternion* pointer){return &pointer->normalize();}
 IRRLICHT_C_API const matrix4* quaternion_getMatrix1(quaternion* pointer){return &pointer->getMatrix();}
 IRRLICHT_C_API matrix4* quaternion_getMatrix2(quaternion* pointer, const core::vector3df* translation){matrix4 dest; pointer->getMatrix(dest, *translation); return &dest;}

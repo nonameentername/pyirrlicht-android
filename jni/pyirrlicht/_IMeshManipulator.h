@@ -22,8 +22,8 @@ IRRLICHT_C_API void IMeshManipulator_recalculateNormals1(IMeshManipulator* point
 IRRLICHT_C_API void IMeshManipulator_recalculateNormals2(IMeshManipulator* pointer, IMeshBuffer* buffer, bool smooth = false, bool angleWeighted = false)
 {pointer->recalculateNormals(buffer, smooth, angleWeighted);}
 
-IRRLICHT_C_API void IMeshManipulator_recalculateTangents(IMeshManipulator* pointer, IMesh* mesh, bool recalculateNormals = false, bool smooth = false, bool angleWeighted = false)
-{pointer->recalculateTangents(mesh, recalculateNormals, smooth, angleWeighted);}
+//IRRLICHT_C_API void IMeshManipulator_recalculateTangents(IMeshManipulator* pointer, IMesh* mesh, bool recalculateNormals = false, bool smooth = false, bool angleWeighted = false)
+//{pointer->recalculateTangents(mesh, recalculateNormals, smooth, angleWeighted);}
 
 IRRLICHT_C_API void IMeshManipulator_scale1(IMeshManipulator* pointer, IMesh* mesh, const core::vector3df* factor)
 {pointer->scale(mesh, *factor);}
@@ -62,7 +62,7 @@ IRRLICHT_C_API void IMeshManipulator_makePlanarTextureMapping3(IMeshManipulator*
 {pointer->makePlanarTextureMapping(buffer, resolutionS, resolutionT, axis, *offset);}
 
 IRRLICHT_C_API IMesh* IMeshManipulator_createMeshWithTangents(IMeshManipulator* pointer, IMesh* mesh, bool recalculateNormals = false, bool smooth = false, bool angleWeighted = false, bool recalculateTangents = true)
-{return pointer->createMeshWithTangents(mesh, recalculateNormals, smooth, angleWeighted, recalculateTangents);}
+{return pointer->createMeshWithTangents(mesh, recalculateNormals, smooth, angleWeighted);} //, recalculateTangents);}
 
 IRRLICHT_C_API IMesh* IMeshManipulator_createMeshWith2TCoords(IMeshManipulator* pointer, IMesh* mesh)
 {return pointer->createMeshWith2TCoords(mesh);}
