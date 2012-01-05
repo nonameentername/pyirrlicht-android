@@ -1,0 +1,6 @@
+build/
+dist/
+irrlicht.egg-info/
+libs/
+obj/
+irrlicht/bin/
