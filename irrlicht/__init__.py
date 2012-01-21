@@ -97,7 +97,7 @@ def as_ansi(value, encoding = IRR_ENCODING):
 		return value
 
 IRR_IMPROVE_UNICODE = ctypes.c_int.in_dll(c_module, 'IRR_IMPROVE_UNICODE').value
-IRR_USE_INPUT_METHOD = ctypes.c_int.in_dll(c_module, 'IRR_USE_INPUT_METHOD').value
+IRR_USE_INPUT_METHOD = False #ctypes.c_int.in_dll(c_module, 'IRR_USE_INPUT_METHOD').value
 
 eQ3MeshIndex = 0
 E_Q3_MESH_GEOMETRY = 0
